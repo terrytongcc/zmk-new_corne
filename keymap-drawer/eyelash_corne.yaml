@@ -230,7 +230,7 @@ layers:
   - RGB ON
   - RGB EFR
   - RGB EFF
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: COLEMK, h: toggle}
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - RGB SPD
