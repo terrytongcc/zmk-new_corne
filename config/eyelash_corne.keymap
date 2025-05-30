@@ -123,8 +123,8 @@
         media_layer {
             display-name = "MEDIA";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                         &mmv MOVE_UP                     &kp K_PREV  &kp K_PP      &kp K_NEXT    &kp C_REPEAT   &kp C_SHUFFLE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                         &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp K_MUTE  &kp K_VOL_DN  &kp K_VOL_UP  &kp C_BRI_DEC  &kp C_BRI_INC         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                         &mmv MOVE_UP                     &kp C_PREV  &kp C_PP      &kp C_NEXT    &kp C_REPEAT   &kp C_SHUFFLE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                         &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DEC  &kp C_BRI_INC         &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp C_MUTE                             &mmv MOVE_DOWN                   &trans      &trans        &trans        &trans         &trans         &trans
                         &trans  &trans  &trans                                                                          &trans      &trans        &trans
             >;
