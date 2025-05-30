@@ -253,9 +253,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - PREV
-  - PP
-  - NEXT
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - REPEAT
   - SHUFFLE
   - {t: '$$mdi:transfer$$', type: trans}
@@ -268,9 +268,9 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - MUTE
-  - VOL DN
-  - VOL UP
+  - $$mdi:volume-off$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
   - $$mdi:brightness-7$$
   - BRI INC
   - {t: '$$mdi:transfer$$', type: trans}
