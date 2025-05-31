@@ -4,7 +4,6 @@
 #define UPR 3
 #define FUNC  4
 #define CTOL 5
-#define SYS 6
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -87,10 +86,10 @@
         lower_layer {
             display-name = "NO/NAV";
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3             &kp N4         &kp N5                                 &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8     &kp N9     &kp N0  &kp BSPC
-&trans  &trans  &trans  &kp LG(LS(GRAVE))  &kp LG(GRAVE)  &trans                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans  &trans
-&trans  &trans  &trans  &kp LC(LS(TAB))    &kp LC(TAB)    &trans    &trans                       &mmv MOVE_DOWN                   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans  &trans
-                        &trans  &trans  &trans                                                                                    &trans  &mo SYS  &trans
+&trans  &kp N1  &kp N2  &kp N3             &kp N4         &kp N5                                 &mmv MOVE_UP                     &kp N6     &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+&trans  &trans  &trans  &kp LG(LS(GRAVE))  &kp LG(GRAVE)  &trans                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PG_UP  &kp HOME  &kp UP    &kp END    &trans  &trans
+&trans  &trans  &trans  &kp LC(LS(TAB))    &kp LC(TAB)    &trans    &trans                       &mmv MOVE_DOWN                   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+                        &trans  &trans  &trans                                                                                    &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -102,7 +101,7 @@
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &trans  &trans    &trans  &trans    &trans    &trans               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &trans  &trans    &trans  &trans    &trans    &trans   &trans                      &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                          &trans  &mo SYS  &trans                                                                   &trans  &trans  &trans
+                          &trans  &trans  &trans                                                                    &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -111,10 +110,10 @@
         func_layer {
             display-name = "FUNC";
             bindings = <
-&studio_unlock  &kp F1           &kp F2          &kp F3           &kp F4           &kp F5                                      &mmv MOVE_UP                     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &kp F11
-&bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &out OUT_USB     &out OUT_BLE     &trans           &trans           &kp PRINTSCREEN  &kp F12
-&trans          &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &tog 1         &trans                       &mmv MOVE_DOWN                   &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                                 &trans  &trans  &trans                                                                                         &trans  &trans  &trans
+&studio_unlock  &kp F1        &kp F2           &kp F3          &kp F4           &kp F5                                      &mmv MOVE_UP                     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10      &kp F11
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &out OUT_USB     &out OUT_BLE     &trans           &trans           &trans       &kp F12
+&sys_reset      &bootloader   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF   &trans                    &mmv MOVE_DOWN                   &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &bootloader  &sys_reset
+                                               &trans  &trans  &trans                                                                                        &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -132,16 +131,5 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        system_layer {
-            display-name = "SYSTEM";
-            bindings = <
-&studio_unlock  &trans      &trans  &trans       &trans  &trans                                &mmv MOVE_UP                     &to 0   &to 1   &trans       &trans  &trans      &trans
-&trans          &bt BT_CLR  &trans  &trans       &trans  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans       &trans  &trans      &trans
-&trans          &sys_reset  &trans  &bootloader  &trans  &trans   &trans                       &mmv MOVE_DOWN                   &trans  &trans  &bootloader  &trans  &sys_reset  &trans
-                                    &trans  &trans  &trans                                                                        &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
     };
 };
