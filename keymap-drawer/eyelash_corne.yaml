@@ -15,18 +15,18 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LGUI}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - H
-  - J
-  - K
-  - L
+  - {t: H, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: LGUI}
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
@@ -122,9 +122,9 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - PG UP
-  - HOME
+  - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
-  - END
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -136,9 +136,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG DN
-  - $$mdi:arrow-left-bold$$
+  - HOME
   - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
