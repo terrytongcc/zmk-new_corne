@@ -47,7 +47,7 @@ layers:
   - NO/NAV
   - {t: '$$mdi:keyboard-space$$', h: FUNC}
   - {t: '$$mdi:keyboard-return$$', h: CONTRL}
-  - SYMBOL
+  - {t: '$$mdi:backspace$$', h: SYMBOL}
   - $$mdi:apple-keyboard-option$$
   COLEMK:
   - $$mdi:keyboard-tab$$
