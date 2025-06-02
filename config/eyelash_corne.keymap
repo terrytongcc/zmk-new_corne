@@ -1,9 +1,9 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 #define NUMNAV 2
-#define UPR 3
-#define FUNC  4
-#define CTOL 5
+#define SYMBOL 3
+#define CONTRL 4
+#define FUNC   5
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -63,7 +63,7 @@
 &kp TAB        &kp Q  &kp W  &kp E  &kp R  &kp T                               &kp UP                &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &mt LSHIFT ESC &kp A  &kp S  &kp D  &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL      &kp Z  &kp X  &kp C  &kp V  &kp B   &kp SPACE                   &kp DOWN              &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                      &kp LGUI  &mo NUMNAV  &lt FUNC SPACE                                           &lt CTOL ENTER  &mo UPR  &kp RALT
+                      &kp LGUI  &mo NUMNAV  &lt FUNC SPACE                                           &lt CONTRL ENTER  &mo SYMBOL  &kp RALT
             >;
 
              sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -77,7 +77,7 @@
 &kp TAB        &kp Q  &kp W  &kp F  &kp P  &kp B                               &kp UP                &kp J  &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
 &mt LSHIFT ESC &kp A  &kp R  &kp S  &kp T  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M  &kp N  &kp E      &kp I    &kp O     &kp SQT
 &kp LCTRL      &kp Z  &kp X  &kp C  &kp D  &kp V   &kp SPACE                   &kp DOWN              &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                      &kp LGUI  &mo NUMNAV  &lt FUNC SPACE                                           &lt CTOL ENTER  &mo UPR  &kp RALT
+                      &kp LGUI  &mo NUMNAV  &lt FUNC SPACE                                           &lt CONTRL ENTER  &mo SYMBOL  &kp RALT
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -107,18 +107,6 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        func_layer {
-            display-name = "FUNC";
-            bindings = <
-&studio_unlock  &kp F1        &kp F2           &kp F3          &kp F4           &kp F5                                      &mmv MOVE_UP                     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10      &kp F11
-&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &out OUT_USB     &out OUT_BLE     &trans           &trans           &trans       &kp F12
-&sys_reset      &bootloader   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF   &trans                    &mmv MOVE_DOWN                   &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &bootloader  &sys_reset
-                                               &trans  &trans  &trans                                                                                        &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-
         control_layer {
             display-name = "CONTRL";
             bindings = <
@@ -126,6 +114,18 @@
 &trans  &trans  &trans  &trans  &trans  &trans               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DN  &kp C_BRI_UP  &trans
 &trans  &trans  &trans  &trans  &trans  &trans   &trans                      &mmv MOVE_DOWN                   &trans      &trans        &trans        &trans        &trans        &trans
                         &trans  &trans  &trans                                                                &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        func_layer {
+            display-name = "FUNC";
+            bindings = <
+&studio_unlock  &kp F1        &kp F2           &kp F3          &kp F4           &kp F5                                      &mmv MOVE_UP                     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10      &kp F11
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &out OUT_USB     &out OUT_BLE     &trans           &trans           &trans       &kp F12
+&sys_reset      &bootloader   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF   &trans                    &mmv MOVE_DOWN                   &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &bootloader  &sys_reset
+                                               &trans  &trans  &trans                                                                                        &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
