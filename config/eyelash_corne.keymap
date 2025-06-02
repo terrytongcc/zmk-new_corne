@@ -1,9 +1,9 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
-#define NUMNAV 2
-#define SYMBOL 3
-#define CONTRL 4
-#define FUNC   5
+#define NUMNAV 1
+#define SYMBOL 2
+#define CONTRL 3
+#define FUNC   4
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -71,7 +71,7 @@
            
         };
 
-        colemak_layer {
+/*        colemak_layer {
             display-name = "COLEMK";
             bindings = <
 &kp TAB        &kp Q  &kp W  &kp F  &kp P  &kp B                               &kp UP                &kp J  &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
@@ -81,7 +81,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-        };
+        }; */
 
         lower_layer {
             display-name = "NO/NAV";
