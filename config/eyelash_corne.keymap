@@ -61,9 +61,9 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB        &kp Q       &kp W       &kp E         &kp R        &kp T                               &kp UP                &kp Y  &kp U        &kp I         &kp O       &kp P          &kp BSPC
-&mt LSHIFT ESC &mt LGUI A  &mt LALT S  &mt LSHIFT D  &mt LCTRL F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &mt LCTRL J  &mt LSHIFT K  &mt LALT L  &mt LGUI SEMI  &kp SQT
+&mt LSHIFT ESC &mt LGUI A  &mt LALT S  &mt LSHIFT D  &mt LCTRL F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &mt RCTRL J  &mt RSHIFT K  &mt RALT L  &mt RGUI SEMI  &kp SQT
 &kp LCTRL      &kp Z       &kp X       &kp C         &kp V        &kp B   &kp SPACE                   &kp DOWN              &kp N  &kp M        &kp COMMA     &kp DOT     &kp FSLH       &kp ESC
-                                       &kp LGUI  &mo NUMNAV  &lt FUNC SPACE                                                 &lt CONTRL ENTER  &lt SYMBOL BSPC  &kp RALT
+                                       &kp LGUI  &mo NUMNAV  &lt FUNC SPACE                                                 &lt CONTRL ENTER  &lt SYMBOL BSPC  &kp DEL
             >;
 
              sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -74,10 +74,10 @@
         colemak_layer {
             display-name = "COLEMK";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F  &kp P  &kp B                               &kp UP                &kp J  &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
-&mt LSHIFT ESC &kp A  &kp R  &kp S  &kp T  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M  &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LCTRL      &kp Z  &kp X  &kp C  &kp D  &kp V   &kp SPACE                   &kp DOWN              &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                      &kp LGUI  &mo NUMNAV  &lt FUNC SPACE                                           &lt CONTRL ENTER  &mo SYMBOL  &kp RALT
+&kp TAB        &kp Q       &kp W       &kp F         &kp P        &kp B                               &kp UP                &kp J  &kp L        &kp U         &kp Y       &kp SEMI    &kp BSPC
+&mt LSHIFT ESC &mt LGUI A  &mt LALT R  &mt LSHIFT S  &mt LCTRL T  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M  &mt RCTRL N  &mt RSHIFT E  &mt RALT I  &mt RGUI O  &kp SQT
+&kp LCTRL      &kp Z       &kp X       &kp C         &kp D        &kp V   &kp SPACE                   &kp DOWN              &kp K  &kp H        &kp COMMA     &kp DOT     &kp FSLH    &kp ESC
+                                       &kp LGUI  &mo NUMNAV  &lt FUNC SPACE                                                 &lt CONTRL ENTER  &lt SYMBOL BSPC  &kp DEL
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -110,9 +110,9 @@
         control_layer {
             display-name = "CONTRL";
             bindings = <
-&none  &none  &none  &none  &none  &none                               &mmv MOVE_UP                     &kp C_PREV  &kp C_PP      &kp C_NEXT    &none         &none         &none
-&none  &none  &none  &none  &none  &none               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DN  &kp C_BRI_UP  &none
-&none  &none  &none  &none  &none  &none   &none                       &mmv MOVE_DOWN                   &none       &none         &none         &none         &none         &none
+&none  &none  &none  &none  &none  &none                               &mmv MOVE_UP                     &kp C_PREV  &kp C_PP      &kp C_NEXT    &none  &none  &none
+&none  &none  &none  &none  &none  &none               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &none  &none  &none
+&none  &none  &none  &none  &none  &none   &none                       &mmv MOVE_DOWN                   &none       &kp C_BRI_DN  &kp C_BRI_UP  &none  &none  &none
                      &none  &none  &none                                                                &none  &none  &none
             >;
 
