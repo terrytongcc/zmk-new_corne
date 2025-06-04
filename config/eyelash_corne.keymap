@@ -141,11 +141,13 @@
             timeout-ms = <50>;
             key-positions = <31 32>;
             bindings = <&kp LC(TAB)>;
+            layers = <0 1>;
         };
         combo_prev_tab {
             timeout-ms = <50>;
-            key-positions = <29 32>;
+            key-positions = <29 30>;
             bindings = <&kp LC(LS(TAB))>;
+            layers = <0 1>;
         };
     };
 };
