@@ -294,3 +294,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+combos:
+- p: [15, 16]
+  k: $$mdi:page-next-outline$$
+- p: [13, 16]
+  k: $$mdi:page-previous-outline$$
