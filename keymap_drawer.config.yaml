@@ -261,6 +261,14 @@ parse_config:
       tap: $$mdi:keyboard-tab$$
     "&kp LC(LS(TAB))":
       tap: $$mdi:keyboard-tab-reverse$$
+    "&kp LG(GRAVE)":
+      tap: $$mdi:page-next-outline$$
+    "&kp LG(LS(GRAVE))":
+      tap: $$mdi:page-previous-outline$$
+    "&kp LC(LEFT)":
+      tap: $$mdi:file-rotate-right-outline$$
+    "&kp LC(RIGHT)":
+      tap: $$mdi:file-rotate-left-outline$$
 
 
   # ZMK
