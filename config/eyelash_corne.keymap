@@ -63,7 +63,7 @@
 &kp TAB     &kp Q       &kp W       &kp E         &kp R        &kp T                               &kp UP                &kp Y  &kp U        &kp I         &kp O       &kp P          &kp BSPC
 &kp ESC     &mt LGUI A  &mt LALT S  &mt LSHIFT D  &mt LCTRL F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &mt RCTRL J  &mt RSHIFT K  &mt RALT L  &mt RGUI SEMI  &kp SQT
 &kp LSHIFT  &kp Z       &kp X       &kp C         &kp V        &kp B   &kp SPACE                   &kp DOWN              &kp N  &kp M        &kp COMMA     &kp DOT     &kp FSLH       &kp ESC
-                                       &kp LGUI  &mo NUMNAV  &lt FUNC SPACE                                                 &lt CONTRL ENTER  &lt SYMBOL BSPC  &kp DEL
+                                       &kp LGUI  &lt NUMNAV DEL  &lt FUNC SPACE                                                 &lt CONTRL ENTER  &lt SYMBOL BSPC  &kp DEL
             >;
 
              sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -77,7 +77,7 @@
 &kp TAB     &kp Q       &kp W       &kp F         &kp P        &kp B                               &kp UP                &kp J  &kp L        &kp U         &kp Y       &kp SEMI    &kp BSPC
 &kp ESC     &mt LGUI A  &mt LALT R  &mt LSHIFT S  &mt LCTRL T  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M  &mt RCTRL N  &mt RSHIFT E  &mt RALT I  &mt RGUI O  &kp SQT
 &kp LSHIFT  &kp Z       &kp X       &kp C         &kp D        &kp V   &kp SPACE                   &kp DOWN              &kp K  &kp H        &kp COMMA     &kp DOT     &kp FSLH    &kp ESC
-                                       &kp LGUI  &mo NUMNAV  &lt FUNC SPACE                                                 &lt CONTRL ENTER  &lt SYMBOL BSPC  &kp DEL
+                                       &kp LGUI  &lt NUMNAV DEL  &lt FUNC SPACE                                                 &lt CONTRL ENTER  &lt SYMBOL BSPC  &kp DEL
             >;
 
             sensor-bindings = <&scroll_encoder>;
