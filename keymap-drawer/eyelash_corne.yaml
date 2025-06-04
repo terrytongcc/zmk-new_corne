@@ -33,7 +33,7 @@ layers:
   - Z
   - X
   - C
-  - {t: v, s: '$$mdi:keyboard-tab$$'}
+  - {t: V, s: '$$mdi:keyboard-tab$$'}
   - B
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
