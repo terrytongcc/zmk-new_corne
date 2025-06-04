@@ -254,6 +254,18 @@ parse_config:
       tap: $$mdi:backup-restore$$
     "&bootloader":
       tap: $$mdi:progress-download$$
+    # Custom
+    "&kp LC(LG(Q))":
+      tap: $$mdi:lock-outline$$
+    "&kp LC(TAB)":
+      tap: $$mdi:keyboard-tab$$
+    "&kp LC(LS(TAB))":
+      tap: $$mdi:keyboard-tab-reverse$$
+    "&kp LG(GRAVE)":
+      tap: $$file-arrow-left-right-outline$$
+    "&kp LG(LS(GRAVE))":
+      tap: $$file-arrow-left-right-outline$$
+
 
   # ZMK
   zmk_keycode_map:
@@ -400,6 +412,7 @@ parse_config:
     LSHFT: $$mdi:apple-keyboard-shift$$
     LCMD: $$mdi:apple-keyboard-command$$
     LG: $$mdi:apple-keyboard-command$$
+    LGUI: $$mdi:apple-keyboard-command$$
     LEFT_GUI: $$mdi:apple-keyboard-command$$
     LEFT_COMMAND: $$mdi:apple-keyboard-command$$
     RCTRL: $$mdi:apple-keyboard-control$$
@@ -411,6 +424,7 @@ parse_config:
     RSHFT: $$mdi:apple-keyboard-shift$$
     RCMD: $$mdi:apple-keyboard-command$$
     RG: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
     PSCRN: $$mdi:printer-outline$$
     RIGHT_COMMAND: $$mdi:apple-keyboard-command$$
     PAGE_UP:
