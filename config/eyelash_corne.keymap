@@ -41,7 +41,7 @@
         qctab: quick_cmd_tab {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp v>, <&kp TAB>;
+            bindings = <&kp V>, <&kp TAB>;
             mods = <(MOD_LGUI)>;
             keep-mods = <(MOD_LGUI)>;
         };
