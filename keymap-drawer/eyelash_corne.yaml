@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - LGUI
-  - NO/NAV
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NO/NAV}
   - {t: '$$mdi:keyboard-space$$', h: FUNC}
   - {t: '$$mdi:keyboard-return$$', h: CONTRL}
   - {t: '$$mdi:backspace$$', h: SYMBOL}
@@ -93,7 +93,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - LGUI
-  - NO/NAV
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NO/NAV}
   - {t: '$$mdi:keyboard-space$$', h: FUNC}
   - {t: '$$mdi:keyboard-return$$', h: CONTRL}
   - {t: '$$mdi:backspace$$', h: SYMBOL}
