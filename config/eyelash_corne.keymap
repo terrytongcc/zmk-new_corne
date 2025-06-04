@@ -110,9 +110,9 @@
         control_layer {
             display-name = "CONTRL";
             bindings = <
-&none  &none  &none  &none  &none  &none                               &mmv MOVE_UP                     &kp C_PREV  &kp C_PP      &kp C_NEXT    &none  &none  &none
-&none  &none  &none  &none  &none  &none               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &none  &none  &none
-&none  &none  &none  &none  &none  &none   &none                       &mmv MOVE_DOWN                   &none       &kp C_BRI_DN  &kp C_BRI_UP  &none  &none  &none
+&none  &none  &none  &none  &none  &none                               &mmv MOVE_UP                     &kp C_PREV   &kp C_PP      &kp C_NEXT    &none  &none  &none
+&none  &none  &none  &none  &none  &none               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP  &none  &none  &none
+&none  &none  &none  &none  &none  &none   &none                       &mmv MOVE_DOWN                   &kp C_SLEEP  &kp C_BRI_DN  &kp C_BRI_UP  &none  &none  &none
                      &none  &none  &none                                                                &none  &none  &none
             >;
 
