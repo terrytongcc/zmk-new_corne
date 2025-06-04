@@ -257,14 +257,6 @@ parse_config:
     # Custom
     "&kp LC(LG(Q))":
       tap: $$mdi:lock-outline$$
-    "&kp LC(TAB)":
-      tap: $$mdi:keyboard-tab$$
-    "&kp LC(LS(TAB))":
-      tap: $$mdi:keyboard-tab-reverse$$
-    "&kp LG(GRAVE)":
-      tap: $$file-arrow-left-right-outline$$
-    "&kp LG(LS(GRAVE))":
-      tap: $$file-arrow-left-right-outline$$
 
 
   # ZMK
