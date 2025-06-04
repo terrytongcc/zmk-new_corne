@@ -297,5 +297,7 @@ layers:
 combos:
 - p: [31, 32]
   k: $$mdi:keyboard-tab$$
-- p: [29, 32]
+  l: [QWERTY, COLEMK]
+- p: [29, 30]
   k: $$mdi:keyboard-tab-reverse$$
+  l: [QWERTY, COLEMK]
