@@ -301,3 +301,9 @@ combos:
 - p: [30, 31]
   k: $$mdi:keyboard-tab-reverse$$
   l: [QWERTY, COLEMK]
+- p: [32, 44]
+  k: $$mdi:page-next-outline$$
+  l: [QWERTY, COLEMK]
+- p: [31, 44]
+  k: $$mdi:page-previous-outline$$
+  l: [QWERTY, COLEMK]

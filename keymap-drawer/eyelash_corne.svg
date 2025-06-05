@@ -597,6 +597,18 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-tab-reverse" xlink:href="#mdi:keyboard-tab-reverse" x="159" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab-reverse"/>
 </g>
+<g class="combo combopos-2">
+<path d="M300,186 l-34,-28" class="combo"/>
+<path d="M300,186 l34,28" class="combo"/>
+<rect rx="6" ry="6" x="286" y="173" width="28" height="26" class="combo"/>
+<use href="#mdi:page-next-outline" xlink:href="#mdi:page-next-outline" x="291" y="177" height="18" width="18.0" class="combo tap glyph mdi:page-next-outline"/>
+</g>
+<g class="combo combopos-3">
+<path d="M272,183 l-60,-34" class="combo"/>
+<path d="M272,183 l60,34" class="combo"/>
+<rect rx="6" ry="6" x="258" y="170" width="28" height="26" class="combo"/>
+<use href="#mdi:page-previous-outline" xlink:href="#mdi:page-previous-outline" x="263" y="174" height="18" width="18.0" class="combo tap glyph mdi:page-previous-outline"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-COLEMK">
@@ -870,6 +882,18 @@ rect.held, rect.combo.held {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-tab-reverse" xlink:href="#mdi:keyboard-tab-reverse" x="159" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab-reverse"/>
+</g>
+<g class="combo combopos-2">
+<path d="M300,186 l-34,-28" class="combo"/>
+<path d="M300,186 l34,28" class="combo"/>
+<rect rx="6" ry="6" x="286" y="173" width="28" height="26" class="combo"/>
+<use href="#mdi:page-next-outline" xlink:href="#mdi:page-next-outline" x="291" y="177" height="18" width="18.0" class="combo tap glyph mdi:page-next-outline"/>
+</g>
+<g class="combo combopos-3">
+<path d="M272,183 l-60,-34" class="combo"/>
+<path d="M272,183 l60,34" class="combo"/>
+<rect rx="6" ry="6" x="258" y="170" width="28" height="26" class="combo"/>
+<use href="#mdi:page-previous-outline" xlink:href="#mdi:page-previous-outline" x="263" y="174" height="18" width="18.0" class="combo tap glyph mdi:page-previous-outline"/>
 </g>
 </g>
 </g>
