@@ -87,7 +87,7 @@
             display-name = "NO/NAV";
             bindings = <
 &kp GRAVE  &kp N1         &kp N2         &kp N3             &kp N4         &kp N5                                 &mmv MOVE_UP                     &kp N6     &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&none      &kp LC(LEFT)   &kp LC(RIGHT)  &kp LG(LS(GRAVE))  &kp LG(GRAVE)  &kp (LG(TAB))          &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PG_UP  &kp LEFT  &kp UP    &kp RIGHT  &none   &none
+&none      &kp LC(LEFT)   &kp LC(RIGHT)  &kp LG(LS(GRAVE))  &kp LG(GRAVE)  &none                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PG_UP  &kp LEFT  &kp UP    &kp RIGHT  &none   &none
 &none      &none          &none          &kp LC(LS(TAB))    &kp LC(TAB)    &none    &none                         &mmv MOVE_DOWN                   &kp PG_DN  &kp HOME  &kp DOWN  &kp END    &none   &none
                                          &none  &none  &none                                                                                      &none  &none  &none
             >;
@@ -137,7 +137,7 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_next_tab {
+/*        combo_next_tab {
             timeout-ms = <50>;
             key-positions = <31 32>;
             bindings = <&kp LC(TAB)>;
@@ -158,8 +158,8 @@
         combo_prev_app {
             timeout-ms = <50>;
             key-positions = <31 44>;
-            bindings = <&kp LG(LS(GRAVE))>;
+            bindings = <&kp LC(LS(TAB))>;
             layers = <0 1>;
-        };
+        }; */
     };
 };
