@@ -255,6 +255,8 @@ parse_config:
     "&bootloader":
       tap: $$mdi:progress-download$$
     # Custom
+    "&kp (LG(TAB))":
+      tap: $$mdi:monitor-multiple$$
     "&kp LC(LG(Q))":
       tap: $$mdi:lock-outline$$
     "&kp LC(TAB)":
