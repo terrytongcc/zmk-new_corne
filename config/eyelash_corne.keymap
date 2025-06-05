@@ -137,16 +137,28 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_next_tab1 {
+        combo_next_tab {
             timeout-ms = <50>;
             key-positions = <31 32>;
             bindings = <&kp LC(TAB)>;
             layers = <0 1>;
         };
-        combo_prev_tab1 {
+        combo_prev_tab {
             timeout-ms = <50>;
             key-positions = <30 31>;
             bindings = <&kp LC(LS(TAB))>;
+            layers = <0 1>;
+        };
+        combo_next_app {
+            timeout-ms = <50>;
+            key-positions = <32 44>;
+            bindings = <&kp LG(GRAVE)>;
+            layers = <0 1>;
+        };
+        combo_prev_app {
+            timeout-ms = <50>;
+            key-positions = <31 44>;
+            bindings = <&kp LG(LS(GRAVE))>;
             layers = <0 1>;
         };
     };
